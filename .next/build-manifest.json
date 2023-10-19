@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/aboutus/developer": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/aboutus/developer.js"
+    ],
     "/news": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
