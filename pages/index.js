@@ -1,3 +1,4 @@
+// import { getStaticProps } from 'next/dist/build/templates/pages';
 import MeetupList from '../components/meetups/MeetupList';
 
 const dummy = [
@@ -23,10 +24,16 @@ const dummy = [
         description: 'This is a meet up'
     }
 ]
-const Home = () => {
+const Home = (props) => {
     return (
-        <MeetupList meetups={dummy} />
+        <MeetupList meetups={props.meetups} />
     );
 }
-
+export async function getStaticProps(){
+    return {
+        props : {
+            meetups:dummy
+        }
+    }
+}
 export default Home;
